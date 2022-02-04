@@ -9,3 +9,7 @@ qb-target: https://github.com/BerkieBb/qb-target
 # Preview
 
 https://streamable.com/ntnav2
+
+# Discord
+
+https://discord.gg/AQHbsahZsV 
