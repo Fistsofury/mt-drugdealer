@@ -8,7 +8,7 @@ RegisterNetEvent('mt-drugdealer:server:vendas', function(args)
 	if args == 1 then -- Whatever is here you will need to change in the clinet.lua aeg args==2
 		local og_kush_bag = Player.Functions.GetItemByName("og_kush_bag")
 		if og_kush_bag ~= nil then
-			local payment = 2 -- trocar aqui o preço que deseja para o próximo item
+			local payment = 2 -- Prices changes
 			Player.Functions.RemoveItem("og_kush_bag", 1, k)
 			Player.Functions.AddMoney('bank', payment , "og_kush_bag-sell")
 			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["og_kush_bag"], "remove", 1)
