@@ -5,7 +5,7 @@ RegisterNetEvent('mt-drugdealer:server:vendas', function(args)
 	local src = source
     local Player = QBCore.Functions.GetPlayer(src)
 	local args = tonumber(args)
-	if args == 1 then -- copiar daqui até, para mudar no menu tem de mudar este agrs == 1 para por exemplo agrs == 2
+	if args == 1 then -- Whatever is here you will need to change in the clinet.lua aeg args==2
 		local og_kush_bag = Player.Functions.GetItemByName("og_kush_bag")
 		if og_kush_bag ~= nil then
 			local payment = 2 -- trocar aqui o preço que deseja para o próximo item
@@ -20,5 +20,5 @@ RegisterNetEvent('mt-drugdealer:server:vendas', function(args)
     end
 end)
 
--- para adicionar mais itens para venda basta copiar o que está marcado acima, colar em baixo do end marcado e trocar
--- os nomes para o nome do item que deseja exemplo "og_kush_bag" troca para o nome do seu item
+-- To add more items just copy and paste the above code, change the item and change the args value
+-- "og_kush_bag" is the example item of what you will be trading in.
