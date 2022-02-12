@@ -13,9 +13,9 @@ AddEventHandler('mt-drugdealer:client:vendas', function()
             params = {
 				isServer = true,
                 event = "mt-drugdealer:server:vendas",
-				args = 1 -- mudar aqui os args
+				args = 1 -- amendments to arg goes here
             }
-        },		-- até aqui, colar logo aqui em baixo		
+        },		-- paste below here	
         {
             header = "< Fechar",
             txt = "",
@@ -26,11 +26,11 @@ AddEventHandler('mt-drugdealer:client:vendas', function()
     })
 end)
 
--- para adicionar outro item terá de fazer o que está no server.lua e aqui copiar o que está marcado e mudar os args para o numero que escolheu no server.lua
+-- To add another item you will need to add additional into the server.lua for each item that gets added then change the arg above
 
 -- spawn ped vendas
 local dealerPed = {
-	{-2166.03, 5197.17, 15.88,"Sr Manel",101.85,0x7E4F763F,"g_m_m_chigoon_01"}, -- trocar aqui o ped e a sua loc
+	{-2166.03, 5197.17, 15.88,"Sr Manel",101.85,0x7E4F763F,"g_m_m_chigoon_01"}, --Ped location
   
   }
   Citizen.CreateThread(function()
